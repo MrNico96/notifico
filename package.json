@@ -1,0 +1,24 @@
+{
+  "name": "notifico",
+  "version": "1.0.0",
+  "description": "Listings from private individuals are unfortunately often deactivated after a few minutes, because the demand is too high and they have received many requests. Scout24's notification function often fails to respond because they have already been deactivated so quickly.",
+  "main": "content/scoutBot.js",
+  "scripts": {
+    "start": "node content/notifico.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrNico96/notifico"
+  },
+  "keywords": [
+    "notifico",
+    "puppeteer",
+    "scraper"
+  ],
+  "author": "Nico R.",
+  "license": "MIT",
+  "dependencies": {
+    "node-cron": "^2.0.3",
+    "puppeteer": "^2.1.1"
+  }
+}
