@@ -2,8 +2,8 @@
 Listings from private individuals are unfortunately often deactivated after a few minutes, because the demand is too high and they have received many requests.
 Scout24's notification function often fails to respond because they have already been deactivated so quickly.
 
-### What exactly does the Bot?
-The bot opens a chromium browser every minute you specify and checks for you if there are new entries.
+### What exactly does the Bot do?
+You can define a frequency of minutes in which the bot opens a chromium browser and checks for you if there are new entries.
 As soon as it has found something new, it informs you by telegram.
 After you have started the bot, everything happens in the background without you noticing anything.
 Of course you can pause or stop it at any time.
@@ -28,7 +28,7 @@ You will get the telegramId as a response.<br>
 **How do I get the searchUrl?**<br/>
 First go to e.g. immobilienscout24.de and enter your preferred search parameters, then press "XX hits".<br/>
 Afterwards you will come to your search results page, now copy the URL from the browser address bar.<br/>
-*Your searchUrl should look similar:*<br/>
+*Your searchUrl should look similar to this:*<br/>
 *https://www.immobilienscout24.de/Suche/de/hamburg/hamburg/wohnung-mieten?numberofrooms=5.0-&price=-4000.0&livingspace=100.0-&enteredFrom=one_step_search*
 
 ### Installing
