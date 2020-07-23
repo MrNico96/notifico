@@ -2,6 +2,7 @@ const cron = require('node-cron');
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const config = require('../config');
+const axios = require('axios');
 
 async function notificoBot(){
     return new Promise(async (resolve, reject) => {
@@ -74,14 +75,12 @@ function add(url) {
     return found;
 }
 
-async function sendToTelegram(listingUrl){
-    const browser = await puppeteer.launch({headless: true});
-    const page = await browser.newPage();
-    await page.setUserAgent('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36');
-    const url = 'https://nico-judge.de/projekte/notifico/index.php?telegramId=' + config.telegramId + '&url=' + listingUrl;
-    await page.goto(url, {waitUntil: 'networkidle2'});
-    console.log("Send to Telegram " + listingUrl);
-    await browser.close();
+//send the result url to telegram
+async function sendToTelegram(listingUrl) {
+    let res = await axios.post('https://notifico-telegram-bot.herokuapp.com/result', {
+        id: config.telegramId,
+        url: listingUrl
+    });
 }
 
 //Define Cronjob
