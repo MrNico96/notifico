@@ -18,7 +18,7 @@
   "author": "Nico R.",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "node-cron": "^2.0.3",
     "puppeteer": "^2.1.1"
   }
