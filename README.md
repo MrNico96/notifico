@@ -2,6 +2,8 @@
 Listings from private individuals are unfortunately often deactivated after a few minutes, because the demand is too high and they have received many requests.
 Scout24's notification function often fails to respond because they have already been deactivated so quickly.
 
+*Since bot detection has become very aggresive and various captcha code cannot be skipped so easily. I have decided to archive the repository.*
+
 ### What exactly does the Bot do?
 You can define a frequency of minutes in which the bot opens a chromium browser and checks for you if there are new entries.
 As soon as it has found something new, it informs you by telegram.
